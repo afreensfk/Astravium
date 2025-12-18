@@ -1,242 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Astravium Solutions Pvt Ltd</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --primary: #1f78d1;
-      --dark: #0f172a;
-      --light: #f8fafc;
-      --muted: #64748b;
-      --card: #ffffff;
-      --border: #e2e8f0;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--light);
-      color: var(--dark);
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, #1f78d1, #2563eb);
-      color: white;
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    header img {
-      width: 140px;
-      margin-bottom: 20px;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      max-width: 800px;
-      margin: 0 auto;
-      opacity: 0.95;
-    }
-
-    section {
-      max-width: 1100px;
-      margin: 80px auto;
-      padding: 0 20px;
-    }
-
-    .section-title {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: var(--primary);
-    }
-
-    .section-subtitle {
-      color: var(--muted);
-      max-width: 800px;
-      margin-bottom: 40px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 30px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.04);
-    }
-
-    .card h3 {
-      margin-bottom: 12px;
-      color: var(--dark);
-      font-size: 1.25rem;
-    }
-
-    .card p {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .highlight {
-      background: #eff6ff;
-      border-left: 5px solid var(--primary);
-      padding: 30px;
-      border-radius: 8px;
-    }
-
-    footer {
-      background: #020617;
-      color: #cbd5f5;
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    footer h3 {
-      color: white;
-      margin-bottom: 10px;
-    }
-
-    footer p {
-      font-size: 0.95rem;
-      margin-bottom: 5px;
-    }
-
-    footer span {
-      display: block;
-      margin-top: 20px;
-      font-size: 0.85rem;
-      color: #94a3b8;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafc;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1f78d1;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .logo img {
+            width: 150px;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 1100px;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #1f78d1;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        a {
+            color: #1f78d1;
+            text-decoration: none;
+        }
+        .core-services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service {
+            flex: 1 1 calc(33% - 20px);
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .service h3 {
+            margin-top: 0;
+        }
+    </style>
+    <title>Astravium Solutions Pvt Ltd</title>
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpeg" alt="Astravium Logo">
+        </div>
+        <h1>Astravium Solutions Pvt Ltd</h1>
+    </header>
+    <div class="container">
+        <section class="intro">
+            <p>Astravium Solutions Pvt Ltd is an innovative start-up that provides specialized insurance services in the U.S., focusing on personal lines, commercial, and employee benefits insurance. Our team has over 10 years of practical experience in U.S. insurance services.</p>
+        </section>
 
-  <!-- HERO -->
-  <header>
-    <img src="logo.jpeg" alt="Astravium Logo">
-    <h1>Astravium Solutions Pvt Ltd</h1>
-    <p>
-      Specialized U.S. insurance services delivering precision, efficiency,
-      and operational excellence across Commercial, Personal Lines,
-      and Employee Benefits insurance.
-    </p>
-  </header>
+        <section class="mission-vision">
+            <h2>Mission</h2>
+            <p>To streamline insurance procedures and provide precise, client-oriented solutions in commercial, personal, and employee benefits insurance. We are committed to ensuring efficiency, transparency, and satisfaction.</p>
 
-  <!-- ABOUT -->
-  <section>
-    <h2 class="section-title">About Us</h2>
-    <p class="section-subtitle">
-      Astravium Solutions Pvt Ltd is an innovative insurance services partner
-      with over a decade of hands-on experience in the U.S. insurance industry.
-      We help agencies operate faster, smarter, and with greater accuracy.
-    </p>
+            <h2>Vision</h2>
+            <p>To achieve recognition as a reliable partner in U.S. insurance services through extensive domain expertise and creative solutions that improve the client experience.</p>
+        </section>
 
-    <div class="highlight">
-      Our team delivers precise quotes, efficient re-marketing, seamless renewals,
-      and end-to-end policy management—ensuring optimized outcomes for every client.
+        <section class="core-services">
+            <h2>Our Core Services</h2>
+            <div class="service">
+                <h3>Personal Lines Insurance</h3>
+                <p>Auto insurance quotes and policy issuance, homeowners, renters, and specialty insurance.</p>
+            </div>
+            <div class="service">
+                <h3>Commercial Lines Insurance</h3>
+                <p>Certificate of Insurance processing, policy checking, loss runs, and download processing.</p>
+            </div>
+            <div class="service">
+                <h3>Employee Benefits Insurance</h3>
+                <p>Group enrollments and terminations, administration of health and life benefit plans, and compliance reporting.</p>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:info@astravium.com">info@astravium.com</a></p>
+            <p>Phone: +1 (800) 555-1234</p>
+            <p>Address: 123 Astravium Drive, Business City, BC 10101</p>
+        </section>
     </div>
-  </section>
 
-  <!-- SERVICES -->
-  <section>
-    <h2 class="section-title">Our Core Services</h2>
-    <p class="section-subtitle">
-      Comprehensive insurance operations support designed for scale,
-      compliance, and performance.
-    </p>
-
-    <div class="grid">
-      <div class="card">
-        <h3>Personal Lines Insurance</h3>
-        <p>
-          Auto, homeowners, renters, and specialty insurance quoting,
-          competitive re-marketing, and smooth renewal management.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Commercial Lines Insurance</h3>
-        <p>
-          Certificate of Insurance processing, loss runs,
-          policy checking, document retrieval, and compliance support.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Employee Benefits</h3>
-        <p>
-          Group enrollments, terminations, benefits administration,
-          compliance tracking, and accurate record management.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Operational Excellence</h3>
-        <p>
-          Streamlined workflows, audit-ready documentation,
-          regulatory compliance, and risk mitigation strategies.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY US -->
-  <section>
-    <h2 class="section-title">Why Choose Astravium</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>10+ Years of Expertise</h3>
-        <p>
-          Deep domain knowledge across U.S. insurance processes,
-          trusted by leading agencies.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Accuracy & Efficiency</h3>
-        <p>
-          High-precision operations that reduce turnaround times
-          and improve client satisfaction.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Scalable Business Model</h3>
-        <p>
-          Technology-enabled workflows designed to grow with your business.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <footer>
-    <h3>Get in Touch</h3>
-    <p>Where clarity meets expertise.</p>
-    <p>Email: info@astravium.com</p>
-    <span>© 2025 Astravium Solutions Pvt Ltd. All rights reserved.</span>
-  </footer>
-
+    <footer>
+        <p>© 2025 Astravium Solutions Pvt Ltd. All rights reserved.</p>
+    </footer>
 </body>
 </html>
