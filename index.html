@@ -30,13 +30,25 @@
         h1, h2 {
             color: #1f78d1;
         }
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+        .section {
+            margin-bottom: 40px;
         }
-        ul li {
-            margin-bottom: 10px;
+        .three-column-layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            flex: 1 1 calc(33% - 20px);
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            margin-top: 0;
+            font-size: 18px;
         }
         footer {
             background-color: #333;
@@ -47,23 +59,6 @@
         a {
             color: #1f78d1;
             text-decoration: none;
-        }
-        .core-services, .operational-strengths {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-        .service {
-            flex: 1 1 calc(33% - 20px);
-            background: #ffffff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .service h3 {
-            margin-top: 0;
         }
     </style>
     <title>Astravium Solutions Pvt Ltd</title>
@@ -76,11 +71,7 @@
         <h1>Astravium Solutions Pvt Ltd</h1>
     </header>
     <div class="container">
-        <section class="intro">
-            <p>Astravium Solutions Pvt Ltd is an innovative start-up that provides specialized insurance services in the U.S., focusing on personal lines, commercial, and employee benefits insurance. Our team has over 10 years of practical experience in U.S. insurance services.</p>
-        </section>
-
-        <section class="mission-vision">
+        <section class="section mission-vision">
             <h2>Mission</h2>
             <p>To streamline insurance procedures and provide precise, client-oriented solutions in commercial, personal, and employee benefits insurance. We are committed to ensuring efficiency, transparency, and satisfaction.</p>
 
@@ -88,39 +79,43 @@
             <p>To achieve recognition as a reliable partner in U.S. insurance services through extensive domain expertise and creative solutions that improve the client experience.</p>
         </section>
 
-        <section class="core-services">
-            <h2>Our Core Services</h2>
-            <div class="service">
-                <h3>Personal Lines Insurance</h3>
-                <p>Auto insurance quotes and policy issuance, homeowners, renters, and specialty insurance.</p>
-            </div>
-            <div class="service">
-                <h3>Commercial Lines Insurance</h3>
-                <p>Certificate of Insurance processing, policy checking, loss runs, and download processing.</p>
-            </div>
-            <div class="service">
-                <h3>Employee Benefits Insurance</h3>
-                <p>Group enrollments and terminations, administration of health and life benefit plans, and compliance reporting.</p>
-            </div>
-        </section>
-
-        <section class="operational-strengths">
-            <h2>Operational Strengths</h2>
-            <div class="service">
-                <h3>Policy Administration</h3>
-                <p>Streamlined policy administration processes to improve efficiency.</p>
-            </div>
-            <div class="service">
-                <h3>Risk Mitigation</h3>
-                <p>Strategies for minimizing risks and optimizing insurance portfolios.</p>
-            </div>
-            <div class="service">
-                <h3>Regulatory Compliance</h3>
-                <p>Audit-ready documentation and adherence to U.S. insurance regulations.</p>
+        <section class="section core-services">
+            <h2>Core Services</h2>
+            <div class="three-column-layout">
+                <div class="card">
+                    <h3>Personal Lines Insurance</h3>
+                    <p>Auto insurance quotes and policy issuance, homeowners, renters, and specialty insurance.</p>
+                </div>
+                <div class="card">
+                    <h3>Commercial Lines Insurance</h3>
+                    <p>Certificate of Insurance processing, policy checking, loss runs, and download processing.</p>
+                </div>
+                <div class="card">
+                    <h3>Employee Benefits Insurance</h3>
+                    <p>Group enrollments and terminations, administration of health and life benefit plans, and compliance reporting.</p>
+                </div>
             </div>
         </section>
 
-        <section class="contact-info">
+        <section class="section operational-excellence">
+            <h2>Operational Excellence</h2>
+            <div class="three-column-layout">
+                <div class="card">
+                    <h3>Streamlined Policy Administration</h3>
+                    <p>Efficient policy administration processes to enhance client satisfaction.</p>
+                </div>
+                <div class="card">
+                    <h3>Risk Mitigation</h3>
+                    <p>Strategies to minimize risks and ensure portfolio optimization.</p>
+                </div>
+                <div class="card">
+                    <h3>Regulatory Compliance</h3>
+                    <p>Audit-ready documentation and adherence to insurance regulations.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-info">
             <h2>Contact Us</h2>
             <p>Email: <a href="mailto:info@astravium.com">info@astravium.com</a></p>
             <p>Phone: +1 (800) 555-1234</p>
