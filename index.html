@@ -1,242 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Astravium Solutions Pvt Ltd</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --primary: #1f78d1;
-      --dark: #0f172a;
-      --light: #f8fafc;
-      --muted: #64748b;
-      --card: #ffffff;
-      --border: #e2e8f0;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--light);
-      color: var(--dark);
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, #1f78d1, #2563eb);
-      color: white;
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    header img {
-      width: 140px;
-      margin-bottom: 20px;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      max-width: 800px;
-      margin: 0 auto;
-      opacity: 0.95;
-    }
-
-    section {
-      max-width: 1100px;
-      margin: 80px auto;
-      padding: 0 20px;
-    }
-
-    .section-title {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: var(--primary);
-    }
-
-    .section-subtitle {
-      color: var(--muted);
-      max-width: 800px;
-      margin-bottom: 40px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 30px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.04);
-    }
-
-    .card h3 {
-      margin-bottom: 12px;
-      color: var(--dark);
-      font-size: 1.25rem;
-    }
-
-    .card p {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .highlight {
-      background: #eff6ff;
-      border-left: 5px solid var(--primary);
-      padding: 30px;
-      border-radius: 8px;
-    }
-
-    footer {
-      background: #020617;
-      color: #cbd5f5;
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    footer h3 {
-      color: white;
-      margin-bottom: 10px;
-    }
-
-    footer p {
-      font-size: 0.95rem;
-      margin-bottom: 5px;
-    }
-
-    footer span {
-      display: block;
-      margin-top: 20px;
-      font-size: 0.85rem;
-      color: #94a3b8;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Astravium Solutions Pvt. Ltd.</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+}
+header {
+  background: #0f2a44;
+  color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+}
+.button-group a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  background: #ffffff;
+  color: #0f2a44;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+section p {
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.card {
+  border: 1px solid #dddddd;
+  padding: 20px;
+  border-radius: 6px;
+}
+.card h3 {
+  margin-top: 0;
+}
+footer {
+  background: #0f2a44;
+  color: #ffffff;
+  padding: 40px 20px;
+}
+footer p {
+  margin: 6px 0;
+}
+form {
+  max-width: 600px;
+  margin: auto;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+button {
+  padding: 12px 20px;
+  background: #0f2a44;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+</style>
 </head>
 <body>
 
-  <!-- HERO -->
-  <header>
-    <img src="logo.jpeg" alt="Astravium Logo">
-    <h1>Astravium Solutions Pvt Ltd</h1>
-    <p>
-      Specialized U.S. insurance services delivering precision, efficiency,
-      and operational excellence across Commercial, Personal Lines,
-      and Employee Benefits insurance.
-    </p>
-  </header>
+<header>
+  <h1>Reliable Support Services That Power Your Business</h1>
+  <p>We provide dependable, scalable, and cost-effective support services that help businesses operate smoothly and grow confidently.</p>
+  <div class="button-group">
+    <a href="#contact">Get a Free Consultation</a>
+    <a href="#contact">Contact Our Team</a>
+  </div>
+</header>
 
-  <!-- ABOUT -->
-  <section>
-    <h2 class="section-title">About Us</h2>
-    <p class="section-subtitle">
-      Astravium Solutions Pvt Ltd is an innovative insurance services partner
-      with over a decade of hands-on experience in the U.S. insurance industry.
-      We help agencies operate faster, smarter, and with greater accuracy.
-    </p>
+<section>
+  <h2>Who We Are</h2>
+  <p>Astravium Solutions Pvt. Ltd. is a professional support services company committed to helping organizations streamline operations, reduce operational burden, and improve efficiency.</p>
+  <p>We act as an extension of your team, ensuring seamless support while you focus on your core business goals.</p>
+</section>
 
-    <div class="highlight">
-      Our team delivers precise quotes, efficient re-marketing, seamless renewals,
-      and end-to-end policy management—ensuring optimized outcomes for every client.
+<section>
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>IT and Technical Support</h3>
+      <p>System monitoring and issue resolution. Application and infrastructure support. On-demand technical assistance.</p>
+      <p>Benefit. Reduced downtime and improved system performance.</p>
     </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section>
-    <h2 class="section-title">Our Core Services</h2>
-    <p class="section-subtitle">
-      Comprehensive insurance operations support designed for scale,
-      compliance, and performance.
-    </p>
-
-    <div class="grid">
-      <div class="card">
-        <h3>Personal Lines Insurance</h3>
-        <p>
-          Auto, homeowners, renters, and specialty insurance quoting,
-          competitive re-marketing, and smooth renewal management.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Commercial Lines Insurance</h3>
-        <p>
-          Certificate of Insurance processing, loss runs,
-          policy checking, document retrieval, and compliance support.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Employee Benefits</h3>
-        <p>
-          Group enrollments, terminations, benefits administration,
-          compliance tracking, and accurate record management.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Operational Excellence</h3>
-        <p>
-          Streamlined workflows, audit-ready documentation,
-          regulatory compliance, and risk mitigation strategies.
-        </p>
-      </div>
+    <div class="card">
+      <h3>Insurance Support Services</h3>
+      <p>Personal Lines Insurance. Commercial Lines Insurance. Employee Benefits Insurance.</p>
     </div>
-  </section>
-
-  <!-- WHY US -->
-  <section>
-    <h2 class="section-title">Why Choose Astravium</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>10+ Years of Expertise</h3>
-        <p>
-          Deep domain knowledge across U.S. insurance processes,
-          trusted by leading agencies.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Accuracy & Efficiency</h3>
-        <p>
-          High-precision operations that reduce turnaround times
-          and improve client satisfaction.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Scalable Business Model</h3>
-        <p>
-          Technology-enabled workflows designed to grow with your business.
-        </p>
-      </div>
+    <div class="card">
+      <h3>Business Operations Support</h3>
+      <p>Process management. Workflow optimization. Operational coordination.</p>
+      <p>Benefit. Higher efficiency and reduced operational costs.</p>
     </div>
-  </section>
+    <div class="card">
+      <h3>Customer Support Services</h3>
+      <p>Email, chat and call support. Issue tracking and resolution. Customer experience management.</p>
+      <p>Benefit. Improved customer satisfaction and retention.</p>
+    </div>
+    <div class="card">
+      <h3>Administrative and Process Support</h3>
+      <p>Documentation and reporting. Back-office operations. Data management.</p>
+      <p>Benefit. More time for strategic decision-making.</p>
+    </div>
+    <div class="card">
+      <h3>Customized Support Solutions</h3>
+      <p>Every business is unique. We design support services tailored to your specific requirements.</p>
+    </div>
+  </div>
+</section>
 
-  <!-- CONTACT -->
-  <footer>
-    <h3>Get in Touch</h3>
-    <p>Where clarity meets expertise.</p>
-    <p>Email: info@astravium.com</p>
-    <span>© 2025 Astravium Solutions Pvt Ltd. All rights reserved.</span>
-  </footer>
+<section>
+  <h2>Why Choose Astravium</h2>
+  <div class="grid">
+    <div class="card"><p>Experienced and skilled professionals.</p></div>
+    <div class="card"><p>Fast response and reliable delivery.</p></div>
+    <div class="card"><p>Customized support models.</p></div>
+    <div class="card"><p>Transparent communication.</p></div>
+    <div class="card"><p>Cost-effective solutions.</p></div>
+    <div class="card"><p>Long-term partnership mindset.</p></div>
+  </div>
+  <p style="text-align:center; margin-top:30px;">Your challenges become our responsibility.</p>
+</section>
+
+<section>
+  <h2>About Astravium Solutions</h2>
+  <p>Astravium Solutions Pvt. Ltd. was founded with a clear purpose to simplify complex business operations through reliable and efficient support services.</p>
+  <p>We believe great support is proactive, strategic, and value-driven. Our team works closely with clients to understand their challenges and deliver solutions that create measurable impact.</p>
+</section>
+
+<section>
+  <h2>Our Vision</h2>
+  <p>To become a trusted global support services partner known for reliability, integrity, and excellence.</p>
+</section>
+
+<section>
+  <h2>Our Mission</h2>
+  <p>To empower businesses by delivering dependable support services that enhance productivity, efficiency, and growth.</p>
+</section>
+
+<section>
+  <h2>Our Core Values</h2>
+  <div class="grid">
+    <div class="card"><p>Integrity. We operate with honesty, ethics, and transparency.</p></div>
+    <div class="card"><p>Commitment. We are dedicated to delivering consistent and reliable support.</p></div>
+    <div class="card"><p>Reliability. Clients can count on us every time.</p></div>
+    <div class="card"><p>Excellence. We strive for continuous improvement in people and processes.</p></div>
+    <div class="card"><p>Customer Focus. Client success defines our success.</p></div>
+    <div class="card"><p>Accountability. We take ownership and deliver results.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Testimonials</h2>
+  <p style="text-align:center;">Astravium Solutions has significantly improved our operational efficiency with their reliable support services.</p>
+</section>
+
+<section id="contact">
+  <h2>Get in Touch</h2>
+  <p style="text-align:center;">We would love to understand your requirements and help your business grow.</p>
+  <form>
+    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Company">
+    <input type="email" placeholder="Email">
+    <input type="text" placeholder="Phone">
+    <textarea rows="5" placeholder="Message"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  <p>Astravium Solutions Pvt. Ltd.</p>
+  <p>Phone. +91 988 559 2434</p>
+  <p>Website. www.astravium.com</p>
+  <p>Tagline. We Support. You Scale.</p>
+</footer>
 
 </body>
 </html>
