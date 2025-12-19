@@ -14,7 +14,7 @@ body {
 header {
   background: #0f2a44;
   color: #ffffff;
-  padding: 60px 20px;
+  padding: 90px 20px;
   text-align: center;
 }
 header h1 {
@@ -37,33 +37,41 @@ header p {
   border-radius: 4px;
 }
 section {
+  padding: 80px 20px;
   padding: 60px 20px;
   max-width: 1100px;
   margin: auto;
 }
 section h2 {
   font-size: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-align: center;
 }
 section p {
+  max-width: 760px;
   max-width: 900px;
   margin: 0 auto 20px auto;
 }
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 32px;
 }
 .card {
   border: 1px solid #dddddd;
-  padding: 20px;
-  border-radius: 6px;
+  padding: 28px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.04);
 }
 .card h3 {
   margin-top: 0;
 }
 footer {
+  background: #0f2a44;
+  color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.15);
   background: #0f2a44;
   color: #ffffff;
   padding: 40px 20px;
@@ -78,12 +86,16 @@ form {
 }
 input, textarea {
   width: 100%;
+  padding: 14px;
+  width: 100%;
   padding: 10px;
   margin-bottom: 12px;
   border: 1px solid #cccccc;
   border-radius: 4px;
 }
 button {
+  padding: 14px 24px;
+  width: 100%;
   padding: 12px 20px;
   background: #0f2a44;
   color: #ffffff;
@@ -96,9 +108,9 @@ button {
 <body>
 
 <header>
-  <div style="display:flex; align-items:center; justify-content:center; gap:15px; margin-bottom:30px;">
-    <img src="logo.jpeg" alt="Astravium Solutions Logo" style="height:60px;">
-    <h1 style="margin:0; font-size:28px;">Astravium Solutions Pvt. Ltd.</h1>
+  <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; margin-bottom:40px;">
+    <img src="logo.jpeg" alt="Astravium Solutions Logo" style="height:110px;">
+    <div style="font-size:34px; font-weight:700; letter-spacing:0.5px;">Astravium Solutions Pvt. Ltd.</div>
   </div>
   <h1>Reliable Support Services That Strengthen Your Business</h1>
   <p>We deliver dependable, scalable, and cost-effective support services that keep your operations running smoothly and enable confident growth.</p>
@@ -168,13 +180,17 @@ button {
 </section>
 
 <section>
-  <h2>Our Vision</h2>
-  <p>To become a trusted global support services partner known for reliability, integrity, and excellence.</p>
-</section>
-
-<section>
-  <h2>Our Mission</h2>
-  <p>To empower businesses through dependable support services that drive productivity, efficiency, and sustainable growth.</p>
+  <h2>Vision and Mission</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Our Vision</h3>
+      <p>To become a trusted global support services partner known for reliability, integrity, and excellence.</p>
+    </div>
+    <div class="card">
+      <h3>Our Mission</h3>
+      <p>To empower businesses through dependable support services that drive productivity, efficiency, and sustainable growth.</p>
+    </div>
+  </div>
 </section>
 
 <section>
@@ -189,15 +205,12 @@ button {
   </div>
 </section>
 
-<section>
-  <h2>Testimonials</h2>
-  <p style="text-align:center;">Astravium Solutions has significantly improved our operational efficiency through their reliable and consistent support services.</p>
-</section>
 
-<section id="contact">
+
+<section id="contact" style="background:#f6f7f9;">
   <h2>Get in Touch</h2>
   <p style="text-align:center;">We would love to understand your requirements and help your business grow.</p>
-  <form>
+  <form action="mailto:manohar@astravium.com" method="post" enctype="text/plain">
     <input type="text" placeholder="Name">
     <input type="text" placeholder="Company">
     <input type="email" placeholder="Email">
@@ -210,8 +223,7 @@ button {
 <footer>
   <p>Astravium Solutions Pvt. Ltd.</p>
   <p>Phone. +91 988 559 2434</p>
-  <p>Website. www.astravium.com</p>
-  <p>Tagline. We Support. You Scale.</p>
+  <p>www.astravium.com</p>
 </footer>
 
 </body>
