@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.astravium.com/sitemap.xml
+Sitemap: https://astravium.com/sitemap.xml
