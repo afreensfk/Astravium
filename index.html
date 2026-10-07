@@ -5,16 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Astravium Solutions — Dependable IT, insurance, operations, and customer support services that keep your business running smoothly.">
   <title>Astravium Solutions | Business Support Services</title>
+  <link rel="canonical" href="https://www.astravium.com/">
+  <meta name="robots" content="index, follow">
   <!-- Open Graph / Social sharing -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Astravium Solutions">
   <meta property="og:url" content="https://www.astravium.com/">
   <meta property="og:title" content="Astravium Solutions | Business Support Services">
   <meta property="og:description" content="Dependable IT, insurance, operations, and customer support services that keep your business running smoothly and enable confident growth.">
-  <meta property="og:image" content="https://www.astravium.com/logo.jpeg">
+  <meta property="og:image" content="https://www.astravium.com/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Astravium Solutions | Business Support Services">
   <meta name="twitter:description" content="Dependable IT, insurance, operations, and customer support services that keep your business running smoothly and enable confident growth.">
-  <meta name="twitter:image" content="https://www.astravium.com/logo.jpeg">
+  <meta name="twitter:image" content="https://www.astravium.com/og-image.jpg">
+  <!-- Resource hints: speed up first paint of external origins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LD1XTQ61ZV"></script>
   <script>
@@ -26,6 +37,34 @@
   <link rel="icon" href="/logo.jpeg" type="image/jpeg">
   <link rel="apple-touch-icon" href="/logo.jpeg">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Structured data: helps Google understand this as a business entity (eligible for richer search results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Astravium Solutions",
+    "url": "https://www.astravium.com/",
+    "logo": "https://www.astravium.com/logo.jpeg",
+    "image": "https://www.astravium.com/og-image.jpg",
+    "description": "Dependable IT, insurance, operations, and customer support services that keep your business running smoothly and enable confident growth.",
+    "telephone": "+91-789-304-3999",
+    "email": "info@astravium.com",
+    "sameAs": [
+      "https://www.linkedin.com/company/astraviumsolutions/"
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "Manohar"
+    },
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "IT & Technical Support" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Insurance Support Services" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Business Operations Support" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Customer Support Services" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Administrative & Process Support" } }
+    ]
+  }
+  </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -190,7 +229,7 @@
       gap: 12px;
       text-decoration: none;
     }
-    .nav-brand img { height: 44px; border-radius: 7px; }
+    .nav-brand img { height: 44px; width: auto; border-radius: 7px; }
     .nav-brand span { font-size: 20px; font-weight: 700; color: #fff; letter-spacing: -0.3px; }
     .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
     .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 16px; font-weight: 500; transition: color 0.2s; }
@@ -435,7 +474,7 @@
     .about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
     .about-visual { display: flex; flex-direction: column; gap: 20px; }
     .about-illustration { border-radius: 20px; overflow: hidden; box-shadow: 0 12px 40px rgba(59,130,246,0.25); position: relative; }
-    .about-illustration img { display: block; width: 100%; height: auto; }
+    .about-illustration img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; }
     .about-illustration:hover img { transition: filter .4s ease; filter: saturate(1.3) brightness(1.08); }
     .about-pills { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
     .about-pill {
@@ -688,7 +727,7 @@
     footer { background: #030812; color: var(--text-muted); padding: 48px 24px; border-top: 1px solid rgba(255,255,255,0.05); position: relative; overflow: hidden; }
     .footer-inner { max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 32px; position: relative; z-index: 1; }
     .footer-brand { display: flex; align-items: center; gap: 10px; }
-    .footer-brand img { height: 32px; border-radius: 4px; }
+    .footer-brand img { height: 32px; width: auto; border-radius: 4px; }
     .footer-brand span { font-weight: 700; color: #fff; font-size: 16px; }
     .footer-links { display: flex; flex-direction: column; gap: 10px; }
     .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 14px; transition: color 0.2s; }
@@ -738,7 +777,7 @@
 <nav id="navbar">
   <div class="nav-inner">
     <a href="/" class="nav-brand">
-      <img src="logo.jpeg" alt="Astravium Solutions">
+      <img src="logo.jpeg" alt="Astravium Solutions" width="500" height="500">
       <span>Astravium</span>
     </a>
     <ul class="nav-links" id="navLinks">
@@ -754,10 +793,11 @@
   <div class="scroll-progress" id="scrollProgress"></div>
 </nav>
 
+<main>
 <!-- HERO -->
 <section class="hero">
   <div class="hero-visual-wrap">
-    <img src="hero-visual.jpg" alt="" class="hero-visual" aria-hidden="true">
+    <img src="hero-visual.jpg" alt="" class="hero-visual" aria-hidden="true" width="1584" height="672" fetchpriority="high">
   </div>
   <div class="hero-content">
     <div class="hero-badge">Trusted Business Support Partner</div>
@@ -858,12 +898,12 @@
 
     <div class="marquee">
       <div class="marquee-track">
-        <div class="marquee-logo-chip"><img src="ameya-logo.jpeg" alt="Ameya Intelligent Machine Labs"></div>
-        <div class="marquee-logo-chip"><img src="aiquan-logo.jpeg" alt="AIQUAN"></div>
-        <div class="marquee-logo-chip"><img src="talentrift-logo.jpeg" alt="Talent Riff"></div>
-        <div class="marquee-logo-chip"><img src="ameya-logo.jpeg" alt="" aria-hidden="true"></div>
-        <div class="marquee-logo-chip"><img src="aiquan-logo.jpeg" alt="" aria-hidden="true"></div>
-        <div class="marquee-logo-chip"><img src="talentrift-logo.jpeg" alt="" aria-hidden="true"></div>
+        <div class="marquee-logo-chip"><img src="ameya-logo.jpeg" alt="Ameya Intelligent Machine Labs" loading="lazy"></div>
+        <div class="marquee-logo-chip"><img src="aiquan-logo.jpeg" alt="AIQUAN" loading="lazy"></div>
+        <div class="marquee-logo-chip"><img src="talentrift-logo.jpeg" alt="Talent Riff" loading="lazy"></div>
+        <div class="marquee-logo-chip"><img src="ameya-logo.jpeg" alt="" aria-hidden="true" loading="lazy"></div>
+        <div class="marquee-logo-chip"><img src="aiquan-logo.jpeg" alt="" aria-hidden="true" loading="lazy"></div>
+        <div class="marquee-logo-chip"><img src="talentrift-logo.jpeg" alt="" aria-hidden="true" loading="lazy"></div>
       </div>
     </div>
 
@@ -871,7 +911,7 @@
 
       <div class="client-card glass spotlight reveal">
         <a href="https://www.ameyalabs.com/" target="_blank" rel="noopener" class="client-logo-wrap" aria-label="Visit Ameya Intelligent Machine Labs website">
-          <img src="ameya-logo.jpeg" alt="Ameya Intelligent Machine Labs">
+          <img src="ameya-logo.jpeg" alt="Ameya Intelligent Machine Labs" loading="lazy">
         </a>
         <h3>Ameya Intelligent Machine Labs</h3>
         <p class="client-desc">A technology consulting and digital transformation company specialising in AI, Cloud, Cybersecurity, and ERP — helping organisations accelerate growth through modern technology.</p>
@@ -889,7 +929,7 @@
 
       <div class="client-card glass spotlight reveal">
         <a href="https://aiquan.ai/" target="_blank" rel="noopener" class="client-logo-wrap" aria-label="Visit AIQUAN website">
-          <img src="aiquan-logo.jpeg" alt="AIQUAN">
+          <img src="aiquan-logo.jpeg" alt="AIQUAN" loading="lazy">
         </a>
         <h3>AIQUAN</h3>
         <p class="client-desc">An AI-powered Intelligent Document Processing platform built for Healthcare, Finance, Insurance, and Legal — transforming unstructured documents into accurate, actionable data.</p>
@@ -907,7 +947,7 @@
 
       <div class="client-card glass spotlight reveal">
         <a href="https://talentriff.com/" target="_blank" rel="noopener" class="client-logo-wrap" aria-label="Visit Talent Riff website">
-          <img src="talentrift-logo.jpeg" alt="Talent Riff">
+          <img src="talentrift-logo.jpeg" alt="Talent Riff" loading="lazy">
         </a>
         <h3>Talent Riff</h3>
         <p class="client-desc">A modern talent and career solutions company connecting skilled professionals with high-growth organisations through recruitment expertise and a people-first approach.</p>
@@ -1049,7 +1089,7 @@
       </div>
       <div class="about-visual reveal">
         <div class="about-illustration reveal-scale">
-          <img src="about-visual.jpg" alt="Illustration of tangled complexity resolving into clear, simple workflow lines" loading="lazy">
+          <img src="about-visual.jpg" alt="Illustration of tangled complexity resolving into clear, simple workflow lines" loading="lazy" width="1024" height="1024">
         </div>
         <div class="about-pills">
           <div class="about-pill">
@@ -1081,7 +1121,7 @@
     <div class="founder-inner">
       <div class="founder-avatar-frame reveal">
         <div class="founder-avatar">
-          <img src="manohar.jpg" alt="Manohar — Founder & CEO, Astravium Solutions">
+          <img src="manohar.jpg" alt="Manohar — Founder & CEO, Astravium Solutions" loading="lazy" width="523" height="523">
         </div>
       </div>
       <div class="founder-text reveal">
@@ -1259,13 +1299,14 @@
     </div>
   </div>
 </section>
+</main>
 
 <!-- FOOTER -->
 <footer>
   <div class="mesh-bg"></div>
   <div class="footer-inner">
     <div class="footer-brand">
-      <img src="logo.jpeg" alt="Astravium Solutions">
+      <img src="logo.jpeg" alt="Astravium Solutions" width="500" height="500" loading="lazy">
       <span>Astravium Solutions</span>
     </div>
     <div class="footer-links">
